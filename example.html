@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font: 100% Lucida Sans, Verdana;
+            margin: 0;
+            line-height: 26px;
+            font-size: 1.125rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+
+        .out {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        #logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #0488d4;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4px;
+        }
+
+        #logo h1 {
+            font-size: 40px;
+        }
+
+    </style>
 </head>
+
 <body>
-    
+
+    <div class="out">
+        <div id="logo">
+            <h1>M</h1>
+        </div>
+        <div id="top">
+            <h1>Please sign in</h1>
+        </div>
+        <div id="login">
+            <form id="write">
+                <input type="email" id="InID" name="fname" placeholder="Write your ID"><br>
+                <input type="password" id="Inpassword" name="lname" placeholder="Your Password">
+            </form>
+            <form id="ReID">
+                <input type="radio" id="ReID" name="fav_language" value="RememberID">
+                <label for="html">Rememger ID</label><br>
+            </form>
+            <form id="submit">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </div>
 </body>
+
 </html>

@@ -95,6 +95,16 @@
         a:hover {
             text-decoration: none;
         }
+        .menuitem a{
+            text-decoration: none;
+        }
+        .menuitem a:visited{
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            list-style-type: none;
+            padding: 2px;
+            cursor: pointer;
+        }
 
 
         @media (max-width: 800px) {
@@ -129,17 +139,20 @@
 <body>
     <div class="bigtool">
         <div id="top">
-            <h1>Welcome to 22000521's Homepage</h1>
+            <h1>Welcome to 이성민's Homepage(22000521)</h1>
             <p>Use the menu to select different Stylesheets</p>
         </div>
         <div class="wrapper">
             <div id="menubar">
                 <ul id="menulist">
-                    <li class="menuitem" onclick="reStyle(0)">Stylesheet 1 </li>
-                    <li class="menuitem" onclick="reStyle(1)">Stylesheet 2 </li>
-                    <li class="menuitem" onclick="reStyle(2)">Stylesheet 3 </li>
-                    <li class="menuitem" onclick="reStyle(3)">Stylesheet 4</li>
-                    <li class="menuitem" onclick="reStyle()">No Stylesheet </li>
+                    <li class="menuitem">
+                        <a href = "style1.html" >Stylesheet 1</a> </li>
+                    <li class="menuitem">Stylesheet 2 </li>
+                    <li class="menuitem">
+                        <a href = "style2.html" >Stylesheet 3</a> </li>
+                    <li class="menuitem">Stylesheet 4</li>
+                    <li class="menuitem">
+                        <a href = "nostyle.html" >No Stylesheet </a></li>
                 </ul>
             </div>
             <div id=main>
@@ -150,13 +163,13 @@
                     of the following links:
                     <br>
                     "
-                    <a href="#" onclick="reStyle(0); return false">Stylesheet 1 </a>
+                    <a href="style1.html">Stylesheet 1 </a>
                     ", "
-                    <a href="#" onclick="reStyle(1); return false">Stylesheet 2 </a>
+                    <a href="#">Stylesheet 2 </a>
                     ", "
-                    <a href="#" onclick="reStyle(2); return false">Stylesheet 3 </a>
+                    <a href="style2.html">Stylesheet 3 </a>
                     ", "
-                    <a href="#" onclick="reStyle(3); return false">Stylesheet 4 </a>
+                    <a href="#">Stylesheet 4 </a>
                     ", "
                 </p>
                 <h2>No Styles</h2>
@@ -164,7 +177,7 @@
                     "This page uses DIV elements to group different sections of the HTML page. Click here to see how the
                     page looks like with no stylesheet:"
                     <br>
-                    <a href="#" onclick="noStyle(); return false">No Stylesheet</a>
+                    <a href="nostyle.html" onclick="noStyle(); return false">No Stylesheet</a>
                     "."
                 </p>
             </div>
